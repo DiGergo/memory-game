@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <audio id="sound1">
+  	<source src="assets/sounds/C.mp3"></source>
+  </audio>
+    <audio id="sound2">
+  	<source src="assets/sounds/D.mp3"></source>
+  </audio>
+    <audio id="sound3">
+  	<source src="assets/sounds/F.mp3"></source>
+  </audio>
+    <audio id="sound4">
+  	<source src="assets/sounds/G.mp3"></source>
+  </audio>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="col-md-5 logo">
+            <h1>MEMORY GAME</h1>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <h3 class="rules"><a href="#">Click here for rules!</a></h3>
+            </div>
+            <div class="row sound-button">
+                <h3 class="sound-button">Sound: <input type="checkbox" class="toggle" value="sound" checked></h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid ">
+        <div class="row">
+            <div class="col-md-6 game-buttons">
+                <button type="button" onclick="playerPrompt()" class="btn" id="start">New Game</button>
+                <p id="player-name"></p>
+            </div>
+            <div class="col-md-6">
+                <div class="highscores">
+                    <h2>Highscores:</h2>
+                    <div id="number-one">1: </div>
+                    <div id="number-two">2: </div>
+                    <div id="number-three">3: </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col game">
+                <div id="game-field">
+                    <div id="moves-count">
+                        <h2>Move: </h2>
+                        <div id="moves"></div>
+                    </div>
+                    <div id="red-field"></div>
+                    <div id="blue-field"></div>
+                    <div id="yellow-field"></div>
+                    <div id="green-field"></div>
+                    <div id="lifes-count">
+                        <h2>Lifes left: </h2>
+                        <div id="lifes-left"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="assets/Js/scripts.js"></script>
+</body>
+
+</html>
